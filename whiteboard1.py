@@ -25,13 +25,13 @@ def same_values(lst1, lst2):
             match = i == j
             if match:
                 sameVals.append(i)
-                lst1.pop()
-                lst2.pop()
+                # LEFT OFF AT LOOKING INTO THE POP METHOD AND SEEING IN MY DATA RETURNED OF WHY ITS POPPIN LIKE IT IS. 
+                print('pop lst1', lst1.pop(i))
+                print('pop lst2', lst2.pop(j))
                 
                 print('same values', set(sameVals))     
    
     return sameVals
     
-
 values = same_values(lst1,lst2)
 print(values)

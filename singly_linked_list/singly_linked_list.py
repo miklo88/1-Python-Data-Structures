@@ -76,8 +76,8 @@ class LinkedList:
         self.head  = self.head.next_node
         #sending back the new head value
         return head_value
-        
-    #removing from the tail
+
+    # # removing from the tail
     # def remove_tail(self):
     #     if not self.tail:
     #         return None
@@ -99,11 +99,11 @@ class LinkedList:
     # def get_max(self):
     # iterate thru the list looking for the highest value. compare values to one another. then reutrn the highest value after total comparisons.
 
-    #  linked_list = LinkedList()
+# linked_list = LinkedList()
 
-    #  linked_list.add_to_head(0)
-    #  linked_list.add_to_tail(6)
-    #  linked_list.add_to_tail(7)
-    #  linked_list.add_to_tail(8)
+# linked_list.add_to_head(0)
+# linked_list.add_to_tail(6)
+# linked_list.add_to_tail(7)
+# linked_list.add_to_tail(8)
 
-    #  print(linked_list)
+# print(linked_list)

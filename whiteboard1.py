@@ -16,16 +16,22 @@ def same_values(lst1, lst2):
     #list where values are equal will go
     sameVals = []
     for i in range(len(lst1)):
-        print('lst1', lst1[i])
+        print('lst1', i)
+        
         for j in range(len(lst2)):
-            print('lst2', lst2[j])
+            print('lst2', j)
             # so i have to remove the values that are equal from the lists so i dont get another match
             #one and done deal.
-            if lst1[i] == lst2[j]:
-                print(lst1[i])
-                print(lst2[j])
+            match = i == j
+            if match:
                 sameVals.append(i)
-    #returns a list where values are equal in lst1 and lst2
-    # return saveVals
-    print(sameVals)
-print(same_values(lst1, lst2))
+                lst1.pop()
+                lst2.pop()
+                
+                print('same values', set(sameVals))     
+   
+    return sameVals
+    
+
+values = same_values(lst1,lst2)
+print(values)

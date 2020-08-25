@@ -7,12 +7,9 @@ same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5])
     #takes two lists of numbers of equal size
 lst1 = [5, 1, -10, 3, 3]
 lst2 = [5, 10, -10, 3, 5]
-# print(len(lst1))
-# for i in range(len(lst1)):
-#     print(lst1[i])
+
 #function same values
 def same_values(lst1, lst2):
-    #nested for loop lst one is the outer loop and lst 2 is the inner loop
     #list where values are equal will go
     sameVals = []
     for i in range(len(lst1)):
@@ -20,16 +17,18 @@ def same_values(lst1, lst2):
         
         for j in range(len(lst2)):
             print('lst2', j)
-            # so i have to remove the values that are equal from the lists so i dont get another match
-            #one and done deal.
-            match = i == j
-            if match:
+            # match = i == j
+            # if match:
+            if lst1[i] == lst2[j]:
                 sameVals.append(i)
-                # LEFT OFF AT LOOKING INTO THE POP METHOD AND SEEING IN MY DATA RETURNED OF WHY ITS POPPIN LIKE IT IS. 
-                print('pop lst1', lst1.pop(i))
-                print('pop lst2', lst2.pop(j))
                 
-                print('same values', set(sameVals))     
+                #compare the two lists and add that value that is equal to a new list sameVals
+                # now if lst1 or lst2 have a val that duplicates or is in sameVals then do not add to sameVals
+                print('lst1 added', lst1[i])
+                print('lst2 added', lst2[j])
+                
+                    
+                print('same values', sameVals)     
    
     return sameVals
     
